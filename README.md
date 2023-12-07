@@ -9,4 +9,4 @@
 - `pip install -U httpx`
 - `pip install -U user_agent`
 
-## موفق باشد.
+## موفق باشید.
