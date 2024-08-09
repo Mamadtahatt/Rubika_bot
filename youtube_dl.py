@@ -58,7 +58,6 @@ class youtube(object):
 						)
 						with open(name + "." + ftype, "wb") as file:
 							file.write(content)
-							file.close()
 						return True
 					else:
 						return False
