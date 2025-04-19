@@ -20,8 +20,8 @@ async def download(url: str) -> bytes:
 		
 	if response.status_code == 200:
 		return response.read()
-	else:
-		return None
+		
+	return None
 	
 async def SearchApi(text: str) -> list:
 	try:
@@ -43,8 +43,7 @@ async def SearchApi(text: str) -> list:
 				}
 			)
 		return result_list
-	else:
-		return None
+	return None
 		
 async def private_handler(client: Client, message: Message):
 	if isinstance(message.raw_text, str):
