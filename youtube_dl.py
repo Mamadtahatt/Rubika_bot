@@ -59,11 +59,8 @@ class youtube(object):
 						with open(name + "." + ftype, "wb") as file:
 							file.write(content)
 						return True
-					else:
-						return False
-				else:
-					return response.json()
-			else:
-				return None
+					return False
+				return response.json()
+			return None
 		except:
 			return None
